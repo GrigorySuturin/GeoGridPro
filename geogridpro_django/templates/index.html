@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>GeoGridPro</title>
-</head>
-<body>
-  <div>
-    <h1>GeoGridPro</h1>
-  </div>
-  <footer>
-    <div>
-      GeoGridPro - {% now "Y" %}
-    </div>
-  </footer>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %}
+  GeoGridPro
+{% endblock title %}
+
+{% block body %}
+  <h1>GeoGridPro</h1>
+  <h2>Инструменты</h2>
+{% endblock body %}

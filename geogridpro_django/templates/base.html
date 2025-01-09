@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+    {% block title %}
+      Base title
+    {% endblock title %}
+  </title>
+</head>
+<body>
+  <header>
+    {% include 'components/navbar.html' %}
+  </header>
+    {% block body %}
+      Base body
+    {% endblock body %}
+</body>
+<footer>
+    <div>&copy; GeoGridPro - {% now 'Y' %}</div>
+</footer>
+</html>
